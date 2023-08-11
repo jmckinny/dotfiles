@@ -92,3 +92,5 @@ set showmode
 set incsearch
 " set leader key
 let mapleader = " "
+" quit window hotkey
+nnoremap <leader>q :q<CR>
