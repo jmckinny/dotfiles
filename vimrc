@@ -90,4 +90,5 @@ set showcmd
 set showmode
 " show serach as we type
 set incsearch
-
+" set leader key
+let mapleader = " "
