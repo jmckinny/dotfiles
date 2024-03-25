@@ -1,2 +1,4 @@
 [branch]
 	sort = -committerdate
+[alias]
+    ll = log --oneline
