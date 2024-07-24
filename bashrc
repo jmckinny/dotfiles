@@ -27,3 +27,6 @@ vv() {
     fi
   fi
 }
+
+# Vars
+export EDITOR=vim
