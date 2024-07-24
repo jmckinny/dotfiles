@@ -16,14 +16,19 @@ vv() {
   # Quick python venv
   VENV_PATH="./venv/bin/activate"
 
-  if [ -f "$VENV_PATH" ]; then
-    . "$VENV_PATH"
+  if [ -f "${VENV_PATH}" ]; then
+    . "${VENV_PATH}"
+    return
+  fi
+
+  if [[ ${1} =~ ^[Yy]$ ]]; then
+    python3 -m venv venv && . "${VENV_PATH}"
   else
     PYTHON_VERSION=$(python3 --version)
-    read -p "Would you like to create a venv with $PYTHON_VERSION? [y/N] " -n 1 -r
+    read -p "Would you like to create a venv with ${PYTHON_VERSION}? [y/N] " -n 1 -r
     echo # Newline
-    if [[ $REPLY =~ ^[Yy]$ ]]; then
-      python3 -m venv venv && . "$VENV_PATH"
+    if [[ ${REPLY} =~ ^[Yy]$ ]]; then
+      python3 -m venv venv && . "${VENV_PATH}"
     fi
   fi
 }
