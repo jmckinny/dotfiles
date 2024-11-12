@@ -14,21 +14,23 @@ fi
 # Functions
 vv() {
   # Quick python venv
-  VENV_PATH="./venv/bin/activate"
+  VENV_DIR_NAME=$(find . -maxdepth 2 -name pyvenv.cfg | head -n 1 | cut -d'/' -f 1-2)
+  VENV_PATH="$VENV_DIR_NAME/bin/activate"
 
   if [ -f "${VENV_PATH}" ]; then
     . "${VENV_PATH}"
     return
   fi
 
+  DEFAULT_VENV="./venv/bin/activate"
   if [[ ${1} =~ ^[Yy]$ ]]; then
-    python3 -m venv venv && . "${VENV_PATH}"
+    python3 -m venv venv && . "$DEFAULT_VENV"
   else
     PYTHON_VERSION=$(python3 --version)
     read -p "Would you like to create a venv with ${PYTHON_VERSION}? [y/N] " -n 1 -r
     echo # Newline
     if [[ ${REPLY} =~ ^[Yy]$ ]]; then
-      python3 -m venv venv && . "${VENV_PATH}"
+      python3 -m venv venv && . "$DEFAULT_VENV"
     fi
   fi
 }
