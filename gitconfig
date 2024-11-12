@@ -2,3 +2,6 @@
 	sort = -committerdate
 [alias]
     ll = log --oneline
+
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig-work
