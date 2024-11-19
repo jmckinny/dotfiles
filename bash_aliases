@@ -3,3 +3,5 @@ alias python=python3
 alias fd=fdfind
 alias nv=nvim
 alias lg=lazygit
+alias ip="ip -c"
+alias diff="diff --color"
