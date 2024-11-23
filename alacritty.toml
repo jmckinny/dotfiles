@@ -1,0 +1,25 @@
+[general]
+# Themes from: https://github.com/alacritty/alacritty-theme
+import = [
+    "~/.config/alacritty/themes/themes/gnome_terminal.toml"
+]
+live_config_reload = true
+
+[window]
+opacity = 0.9
+decorations = "Full"
+decorations_theme_variant = "Dark"
+
+[font]
+normal = { family = "UbuntuMonoNerdFont"}
+size = 13
+
+[mouse]
+hide_when_typing = true
+
+[selection]
+save_to_clipboard = true
+
+[env]
+# Don't break default colors
+TERM = "xterm-256color"
