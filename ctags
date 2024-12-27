@@ -1,0 +1,13 @@
+--recurse=yes
+--exclude=.git
+--exclude=*.db
+--exclude=*.dll
+--exclude=*.cache
+--exclude=logs/*
+--exclude=log/*
+--exclude=\*.pyc
+--exclude=\*.swp
+--exclude=\*.class
+--exclude=\*.bak
+--exclude=node_modules/*
+
