@@ -5,3 +5,4 @@ alias nv=nvim
 alias lg=lazygit
 alias ip="ip -c"
 alias diff="diff --color"
+alias t=task
