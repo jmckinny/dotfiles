@@ -37,3 +37,13 @@ vv() {
 
 # Vars
 export EDITOR=vim
+
+# History
+# append to the history file, don't overwrite it
+shopt -s histappend
+# don't put duplicate lines or lines starting with space in the history.
+HISTCONTROL=ignoreboth
+# max number of lines for history file
+export HISTFILESIZE=20000
+# keep 10000 commands of history
+export HISTSIZE=10000
