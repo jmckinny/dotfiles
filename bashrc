@@ -38,6 +38,12 @@ vv() {
 # Vars
 export EDITOR=vim
 
+# Options
+# fix spelling errors for cd, only in interactive shell
+shopt -s cdspell
+# don't allow `cmd > important.txt` to delete things
+shopt -o noclobber
+
 # History
 # append to the history file, don't overwrite it
 shopt -s histappend
