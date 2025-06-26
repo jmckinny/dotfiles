@@ -7,3 +7,4 @@ alias ip="ip -c"
 alias diff="diff --color"
 alias t=task
 alias hist=history
+alias hgrep="history | grep"
