@@ -51,3 +51,5 @@ HISTCONTROL=ignoreboth
 export HISTFILESIZE=20000
 # keep 10000 commands of history
 export HISTSIZE=10000
+# ignore these commands for history
+export HISTIGNORE="clear:bg:fg:cd:cd -:cd ..:exit:date:w:ls:l:ll:lll:z"
