@@ -161,6 +161,7 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " Plug 'tpope/vim-fugitive'
 " Plug 'scrooloose/nerdcommenter'
 " Plug 'tpope/vim-repeat'
+" Plug 'airblade/vim-gitgutter'
 " Plug 'https://github.com/joshdick/onedark.vim.git'
 " call plug#end()
 " color onedark
