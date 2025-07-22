@@ -123,6 +123,16 @@ nnoremap n nzz
 nnoremap N Nzz
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
+" Buffer stuff
+nnoremap <S-h> :bprevious<CR>
+nnoremap <S-l> :bnext<CR>
+nnoremap <leader>b :buffers<CR>
+nnoremap <leader>bd :bdelete<CR>
+" Window resizing
+nnoremap <C-Up> :resize -2<CR>
+nnoremap <C-Down> :resize +2<CR>
+nnoremap <C-Left> :vertical resize -2<CR>
+nnoremap <C-Right> :vertical resize +2<CR>
 " ctags
 " apt install exuberant-ctags
 nnoremap <leader>tb :!ctags .<CR>
