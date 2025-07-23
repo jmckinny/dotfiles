@@ -2,6 +2,8 @@
 	sort = -committerdate
 [alias]
     ll = log --oneline
+[init]
+    defaultBranch = main
 
 [includeIf "gitdir:~/work/"]
     path = ~/.gitconfig-work
