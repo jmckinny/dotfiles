@@ -154,7 +154,7 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 "               Plugins
 " ==================================
 " Comment out by default
-"
+" https://github.com/junegunn/vim-plug?tab=readme-ov-file#unix
 " call plug#begin()
 " Plug 'vim-airline/vim-airline'
 " Plug 'tpope/vim-surround'
