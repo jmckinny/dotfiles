@@ -8,3 +8,4 @@ alias diff="diff --color"
 alias t=task
 alias hist=history
 alias hgrep="history | grep"
+alias unixtime="date +%s"
