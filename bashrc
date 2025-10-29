@@ -53,3 +53,5 @@ export HISTFILESIZE=20000
 export HISTSIZE=10000
 # ignore these commands for history
 export HISTIGNORE="clear:bg:fg:cd:cd -:cd ..:exit:date:w:ls:l:ll:lll:z"
+# Set ripgrep config path
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
