@@ -9,4 +9,5 @@ alias t=task
 alias hist=history
 alias hgrep="history | grep"
 alias unixtime="date +%s"
-alias gettime="date -d" # ex: gettime now-4hours
+alias gettime="date -d"
+alias tempd="cd $(mktemp -d) || echo 'Failed to create temp dir'"
