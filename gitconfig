@@ -2,6 +2,9 @@
 	sort = -committerdate
 [alias]
     ll = log --oneline
+    up = pull --rebase --autostash
+    f = fetch
+    s = status
 [init]
     defaultBranch = main
 
