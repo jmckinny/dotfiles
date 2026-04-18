@@ -8,5 +8,8 @@
 [init]
     defaultBranch = main
 
+[status]
+	showStash = true
+
 [includeIf "gitdir:~/work/"]
     path = ~/.gitconfig-work
