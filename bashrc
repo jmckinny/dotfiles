@@ -35,6 +35,32 @@ vv() {
   fi
 }
 
+up() {
+  # cd up specified number of parent directories
+  [[ $# -gt 1 ]] && {
+    echo "up: expected 0 or 1 arg, given $#"
+    return 1
+  }
+
+  if [[ $# -eq 0 ]]; then
+    cd ..
+    return $?
+  fi
+
+  [[ "$1" =~ ^[0-9]+$ ]] || {
+    echo "up: arg is not a number"
+    return 1
+  }
+
+  local i
+  local d=""
+  for ((i = 0; i < $1; i++)); do
+    d+="../"
+  done
+
+  cd "$d"
+}
+
 # Vars
 export EDITOR=vim
 
